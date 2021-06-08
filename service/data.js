@@ -9,3 +9,12 @@ export const removeDatasRepetidas = (datas) => {
 
   return datasUnicas;
 };
+
+export const ordenarDatas = (data) => {
+  data.sort((a, b) => {
+    const primeiraData = moment(a, "DD/MM/YYY").format("YYYYMMDD");
+    const segundaData = moment(b, "DD/MM/YYY").format("YYYYMMDD");
+
+    return primeiraData - segundaData;
+  });
+};
