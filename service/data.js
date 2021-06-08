@@ -6,7 +6,6 @@ export const removeDatasRepetidas = (datas) => {
       datasUnicas.push(data.dataFormatada);
     }
   });
-
   return datasUnicas;
 };
 
