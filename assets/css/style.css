@@ -93,11 +93,18 @@ body {
   padding: 0.75rem;
   font-size: 0.75rem;
 }
-.form-input {
+.form-input,
+.form-date {
   outline: none;
   background-color: #f6f1d1;
   border-color: rgba(255, 255, 255, 0.1);
 }
+
+.form-date {
+  cursor: pointer;
+  margin-left: 4px;
+}
+
 .form-button {
   border: 1px;
   background: #f6f1d1;
